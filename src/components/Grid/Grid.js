@@ -32,7 +32,7 @@ const GridData = styled.table`
 `;
 
 const GridRow = styled.tr`
-  background-color: ${({ selected }) => (selected ? "#eee" : "#ffff")};
+  background-color: ${({ selected }) => (selected ? "#eee" : "#fff")};
   cursor: pointer;
   &: hover {
     background-color: #eee;
@@ -54,7 +54,7 @@ const GridDataItem = styled.td`
 
 // Grid Component
 const Grid = (props) => {
-  const { columns, data } = props;
+  const { columns, data, dataTestId } = props;
   const [gridData, setGridData] = useState(data);
   const [selectAllValue, setSelectAllValue] = useState(0);
 
@@ -110,7 +110,7 @@ const Grid = (props) => {
   const selectionCount = gridData.filter((item) => item.checked).length;
 
   return (
-    <GridContainer>
+    <GridContainer data-testid={dataTestId}>
       <GridActions>
         <CheckBox
           value={selectAllValue}
