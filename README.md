@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Steps to Run:
+- Make sure you are running on the latest node version - check version by running `npm -v` for node in the terminal window.
+- Clone the repo
+- Open terminal, go to any directory and run `git clone git@github.com:arunsena/device-security.git`
+- Go in to the repo by running `cd device-security`
+- Run `npm install` on the root directory
+- Run `npm start` or `npm run start` on the root directory
+
 ## Available Scripts
 
 In the project directory, you can run:
